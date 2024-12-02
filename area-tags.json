@@ -1,0 +1,247 @@
+{
+    "areaKeys": {
+        "advertising": {
+            "default": true,
+            "billboard": false
+        },
+        "aerialway": {
+            "default": true,
+            "cable_car": false,
+            "chair_lift": false,
+            "drag_lift": false,
+            "gondola": false,
+            "goods": false,
+            "j-bar": false,
+            "magic_carpet": false,
+            "mixed_lift": false,
+            "platter": false,
+            "rope_tow": false,
+            "t-bar": false,
+            "zip_line": false
+        },
+        "aeroway": {
+            "default": true,
+            "jet_bridge": false,
+            "parking_position": false,
+            "runway": false,
+            "taxiway": false
+        },
+        "allotments": {
+            "default": true
+        },
+        "amenity": {
+            "default": true,
+            "bench": false,
+            "weighbridge": false
+        },
+        "area:highway": {
+            "default": true
+        },
+        "attraction": {
+            "default": true,
+            "dark_ride": false,
+            "river_rafting": false,
+            "summer_toboggan": false,
+            "train": false,
+            "water_slide": false
+        },
+        "bridge:support": {
+            "default": true
+        },
+        "building": {
+            "default": true
+        },
+        "building:part": {
+            "default": true
+        },
+        "cemetery": {
+            "default": true
+        },
+        "club": {
+            "default": true
+        },
+        "craft": {
+            "default": true
+        },
+        "demolished:building": {
+            "default": true
+        },
+        "disused:amenity": {
+            "default": true
+        },
+        "disused:railway": {
+            "default": true
+        },
+        "disused:shop": {
+            "default": true
+        },
+        "emergency": {
+            "default": true,
+            "designated": false,
+            "destination": false,
+            "no": false,
+            "official": false,
+            "private": false,
+            "yes": false
+        },
+        "golf": {
+            "default": true,
+            "cartpath": false,
+            "hole": false,
+            "path": false
+        },
+        "healthcare": {
+            "default": true
+        },
+        "highway": {
+            "default": false,
+            "elevator": true,
+            "rest_area": true,
+            "services": true
+        },
+        "historic": {
+            "default": true
+        },
+        "indoor": {
+            "default": true,
+            "corridor": false,
+            "wall": false
+        },
+        "industrial": {
+            "default": true
+        },
+        "internet_access": {
+            "default": true
+        },
+        "junction": {
+            "default": true
+        },
+        "landuse": {
+            "default": true
+        },
+        "leisure": {
+            "default": true,
+            "slipway": false,
+            "track": false
+        },
+        "man_made": {
+            "default": true,
+            "yes": false,
+            "breakwater": false,
+            "carpet_hanger": false,
+            "crane": false,
+            "cutline": false,
+            "dyke": false,
+            "embankment": false,
+            "goods_conveyor": false,
+            "groyne": false,
+            "pier": false,
+            "pipeline": false,
+            "torii": false,
+            "video_wall": false
+        },
+        "military": {
+            "default": true,
+            "trench": false
+        },
+        "natural": {
+            "default": true,
+            "bay": false,
+            "cliff": false,
+            "coastline": false,
+            "ridge": false,
+            "strait": false,
+            "tree_row": false,
+            "valley": false
+        },
+        "office": {
+            "default": true
+        },
+        "piste:type": {
+            "default": true,
+            "downhill": false,
+            "hike": false,
+            "ice_skate": false,
+            "nordic": false,
+            "skitour": false,
+            "sled": false,
+            "sleigh": false
+        },
+        "place": {
+            "default": true
+        },
+        "playground": {
+            "default": true,
+            "activitypanel": false,
+            "balancebeam": false,
+            "basketswing": false,
+            "bridge": false,
+            "climbingwall": false,
+            "hopscotch": false,
+            "horizontal_bar": false,
+            "seesaw": false,
+            "slide": false,
+            "structure": false,
+            "swing": false,
+            "tunnel_tube": false,
+            "water": false,
+            "zipwire": false
+        },
+        "police": {
+            "default": true
+        },
+        "polling_station": {
+            "default": true
+        },
+        "power": {
+            "default": true,
+            "cable": false,
+            "line": false,
+            "minor_line": false
+        },
+        "public_transport": {
+            "default": false,
+            "platform": true
+        },
+        "railway": {
+            "default": false,
+            "platform": true,
+            "roundhouse": true,
+            "station": true,
+            "traverser": true,
+            "turntable": true,
+            "wash": true,
+            "ventilation_shaft": true
+        },
+        "seamark:type": {
+            "default": true
+        },
+        "shop": {
+            "default": true
+        },
+        "telecom": {
+            "default": true
+        },
+        "tourism": {
+            "artwork": false,
+            "attraction": false
+        },
+        "traffic_calming": {
+            "default": true,
+            "yes": false,
+            "bump": false,
+            "chicane": false,
+            "choker": false,
+            "cushion": false,
+            "dip": false,
+            "hump": false,
+            "island": false,
+            "mini_bumps": false,
+            "rumble_strip": false
+        },
+        "waterway": {
+            "default": false,
+            "dam": true
+        }
+    }
+}
