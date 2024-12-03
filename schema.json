@@ -1,21 +1,25 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "$id": "https://github.com/simonpoole/geocontext",
+    "additionalProperties": false,
     "type": "object",
-    "additionalProperties": {
-        "type": "object",
-        "additionalProperties": false,
+    "properties": {
         "areaKeys": {
             "type": "object",
-            "properties": {
-                "key": {
+            "patternProperties": {
+                "^[a-zA-Z].*": {
                     "type": "object",
                     "properties": {
                         "default": {
                             "description": "true if the key is normally an area",
                             "type": "boolean"
-                        },
-                        "value": {
+                        }
+                    },
+                    "required": [
+                        "default"
+                    ],
+                    "patternProperties": {
+                        "^[a-zA-Z].*": {
                             "description": "value of the tag, true if an area, false if not",
                             "type": "boolean"
                         }
@@ -23,5 +27,8 @@
                 }
             }
         }
-    }
+    },
+    "required": [
+        "areaKeys"
+    ]
 }

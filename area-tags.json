@@ -223,6 +223,7 @@
             "default": true
         },
         "tourism": {
+            "default": true,
             "artwork": false,
             "attraction": false
         },
