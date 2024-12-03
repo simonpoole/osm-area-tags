@@ -2,7 +2,7 @@
 
 A simple OSM closed (that is first node is the same as the last node) _way_ can either represent a "polygon" that is a simple area with no holes or a linear feature that loops. While area semantics can be forced by adding an _area=yes_ tag, most of the time area semantics are implied by the tagging, or rather the kind of object the OSM element represents.
 
-It should be noted that there are degenerate cases in which the tagging can imply both, for example a closed way that is tagged both as a roundabout and a garden. These should be avoided, and can easily be by using a second way with the name nodes as the original one.
+It should be noted that there are degenerate cases in which the tagging can imply both, for example a closed way that is tagged both as a roundabout and a garden. These should be avoided, and can easily be by using a second way with the same nodes as the original one.
 
 Objects modeled as OSM multi-polygons always have area semantics.
 
