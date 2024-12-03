@@ -6,12 +6,10 @@ It should be noted that there are degenerate cases in which the tagging can impl
 
 Objects modeled as OSM multi-polygons always have area semantics.
 
-This is based on data from https://github.com/ideditor/id-area-keys that extracts the information from the iD presets and from iD source code, but supports both
+This is based on data from https://github.com/ideditor/id-area-keys as a starting point that extracts the information from the iD presets and from iD source code, but supports both
 _key_ implies area semantics and certain values don't, and the opposite when _key_ normally implies linear, but certain values have area semantics.
 
-Yes this is a bad case of https://xkcd.com/927/
-
-__Note: currently the validation against the schema is broken.__
+Yes, this is a bad case of https://xkcd.com/927/
 
  
 
