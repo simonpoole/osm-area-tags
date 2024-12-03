@@ -2,12 +2,17 @@
 buildscript {
     repositories {
         mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
     }
     dependencies {
+        classpath "com.github.breadmoirai:github-release:2.5.2"
         classpath(group: "com.github.java-json-tools", name: "json-schema-validator", version: "2.2.14");
     }   
 }
 
+apply plugin: "com.github.breadmoirai.github-release"
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.github.fge.jackson.JsonLoader;
@@ -16,8 +21,10 @@ import com.github.fge.jsonschema.main.JsonSchema;
 import com.github.fge.jsonschema.main.JsonSchemaFactory;
 
 ext {
+    version = '0.1.0'
     schema_file = projectDir.getPath() + "/schema.json"
     data_file = projectDir.getPath() + "/area-tags.json"
+    githubToken = System.getenv('GITHUB_TOKEN')
 }
 
 task validate() {
@@ -38,3 +45,15 @@ task validate() {
 }
 validate.group = 'validation'
 validate.description = 'Vaidate the json data'
+
+githubRelease {
+    token project.ext.githubToken == null ? "" : project.ext.githubToken    
+    owner = "simonpoole"
+    tagName = project.ext.version
+    releaseName = project.ext.version
+    targetCommitish = "main" 
+    generateReleaseNotes = true 
+
+    releaseAssets data_file, schema_file
+    overwrite = true
+}

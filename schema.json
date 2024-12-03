@@ -1,29 +1,35 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "$id": "https://github.com/simonpoole/geocontext",
+    "$id": "https://github.com/simonpoole/osm-area-tags",
     "additionalProperties": false,
     "type": "object",
     "properties": {
         "areaKeys": {
+            "additionalProperties": false,
             "type": "object",
             "patternProperties": {
                 "^[a-zA-Z].*": {
                     "type": "object",
+                    "additionalProperties": false,
                     "properties": {
                         "default": {
                             "description": "true if the key is normally an area",
                             "type": "boolean"
+                        },
+                        "values": {
+                            "description": "values that have specific different semantics",
+                            "type": "object",
+                            "patternProperties": {
+                                "^[a-zA-Z].*": {
+                                    "description": "value of the tag, true if an area, false if not",
+                                    "type": "boolean"
+                                }
+                            }
                         }
                     },
                     "required": [
                         "default"
-                    ],
-                    "patternProperties": {
-                        "^[a-zA-Z].*": {
-                            "description": "value of the tag, true if an area, false if not",
-                            "type": "boolean"
-                        }
-                    }
+                    ]
                 }
             }
         }
